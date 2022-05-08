@@ -2,7 +2,7 @@
 <html lang="en-us">
   <link rel="manifest" href="./manifest.webmanifest">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="canonical" href="https://grubbyplaya.github.io/Sonic-2-WASM/"/>
+  <link rel="canonical" href="https://grubbyplaya.github.io/Sonic-2-WASM/"/>
 
   <head>
     <meta charset="utf-8">
@@ -1295,26 +1295,25 @@
       };
     </script>
     <script async type="text/javascript" src="index.js"></script>
-    <script async type="text/javascript" src="https://grubbyplaya.github.io/pwabuilder-sw.js"></script>
-
-    <script>
-      if (navigator.serviceWorker) {
-        navigator.serviceWorker.register (
-          'https://grubbyplaya.github.io/pwabuilder-sw.js',
-          {scope: 'https://grubbyplaya.github.io/Sonic-2-WASM'}
-        )
-      }
-  </script>
-  
-  <script type="module">
-   import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
-   const el = document.createElement('pwa-update');
-   document.body.appendChild(el);
-</script>
-</body>
-</html>
+    <script async type="text/javascript" src="/pwabuilder-sw.js"></script>
 
   </body>
-</html>
-
-
+  
+  <body>
+    
+    <script>
+        if (navigator.serviceWorker) {
+          navigator.serviceWorker.register (
+            '/pwabuilder-sw.js',
+            {scope: '/'}
+          )
+        }
+    </script>
+    
+    <script type="module">
+     import 'https://cdn.jsdelivr.net/npm/@pwabuilder/pwaupdate';
+     const el = document.createElement('pwa-update');
+     document.body.appendChild(el);
+  </script>
+  </body>
+  </html>

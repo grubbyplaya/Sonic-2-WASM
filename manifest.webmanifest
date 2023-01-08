@@ -10,6 +10,7 @@
   "short_name": "Sonic 2",
   "start_url": "https://grubbyplaya.github.io/Sonic-2-WASM/",
   "theme_color": "#ffcd37",
+   "prefer_related_applications": false,
   "categories": [],
   "screenshots": [],
  "icons": [    
